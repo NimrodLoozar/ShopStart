@@ -30,7 +30,6 @@ body {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 body * {
@@ -83,9 +82,59 @@ p {
   margin: 0.5em 0;
 }
 
+.pFoto {
+  width: 120px;
+  padding: 3rem;
+}
+
+#img1 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+#img2 {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+#img3 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+#img4 {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+#img5 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.pFoto-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: right;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.imgLeft {
+  border-radius: 0 100px 100px 100px;
+}
+
+.imgRight {
+  border-radius: 100px 0 100px 100px;
 }
 
 section {
@@ -740,6 +789,26 @@ html {
 #myBtn8 {
   rotate: 90deg;
   scale: 1.5;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50px;
+  transition: 0.5s;
+  height: 45px;
+  width: 28px;
+  margin-top: -2rem;
+}
+#myBtn:hover,
+#myBtn2:hover,
+#myBtn3:hover,
+#myBtn4:hover,
+#myBtn5:hover,
+#myBtn6:hover,
+#myBtn7:hover,
+#myBtn8:hover {
+  font-weight: bold;
+  scale: 1.1;
+  background-color: rgba(149, 255, 0, 0.5529411765);
+  border-width: 5px;
 }
 
 .bubbleTop {
@@ -748,7 +817,7 @@ html {
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
-  background-color: rgba(86, 147, 0, 0.5529411765);
+  background-color: #D9D9D9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 50px 50px;
   scroll-margin-top: 4em;
@@ -848,31 +917,6 @@ img.round {
   box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.0666666667);
   border-radius: 0.5rem;
   overflow: hidden;
-}
-
-.product .product-img,
-.product .product-info {
-  display: flex;
-}
-.product .product-img {
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.0549019608);
-}
-.product .product-img img {
-  object-fit: contain;
-}
-.product .product-info {
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-.product .price {
-  padding: 0 0 0.5rem 1rem;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.8em;
-  color: #cf0c0c;
-  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */

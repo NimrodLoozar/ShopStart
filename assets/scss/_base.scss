@@ -33,7 +33,6 @@ body {
 }
 
 body {
-  font-family: conf.get("normal-font");
   overflow-x: hidden;
 
   * {
@@ -83,9 +82,55 @@ p {
   margin: 0.5em 0;
 }
 
+.pFoto{
+  width: 120px;
+  padding: 3rem;
+}
+
+#img1{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+#img2{
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+#img3{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+#img4{
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+#img5{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+
+.pFoto-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: right;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.imgLeft{
+  border-radius: 0 100px 100px 100px;
+}
+.imgRight{
+  border-radius: 100px 0 100px 100px;
 }
 
 section {
