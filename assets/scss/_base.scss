@@ -1,0 +1,182 @@
+@use "conf";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap');
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+body {
+  font-family: conf.get("normal-font");
+  overflow-x: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+h1{
+font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+h2
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  position: relative;
+  padding: 2rem 0;
+
+  &.blue-background {
+    background-color: transparentize(conf.get("blue"), 0.5);
+  }
+  &.orange-background {
+    background-color: transparentize(conf.get("orange"), 0.5);
+  }
+}
+
+.card {
+  padding: 0 !important;
+
+  &:not(.link-block) > *:not(img),
+  &.link-block a > *:not(img) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  img.round {
+    margin: 1rem;
+  }
+}
+
+.product {
+  .product-img {
+    padding: 0.5rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
+.link-block a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+a {
+  color: conf.get("blue");
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: conf.get("orange");
+  }
+}
+
+aside {
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #efefef;
+    border-radius: 0.5rem;
+
+    li {
+      padding: 0;
+      margin: 0;
+      a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.5rem;
+        text-decoration: none;
+        border-bottom: 1px solid #efefef;
+      }
+    }
+  }
+}
+
+.products-container {
+  padding: 1rem 0;
+
+  aside {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+footer {
+  background-color: #666;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.80;
+  z-index: 3;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0.5rem;
+
+    li {
+      display: flex;
+      position: relative;
+
+      a {
+        display: inline-block;
+        padding: 1rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .main-menu {
+    ul > li > a {
+      text-decoration: none;
+
+      &:hover {
+        background-color: #fff3;
+      }
+    }
+  }
+}
+
+#progress-bar {
+  background-color: #95ff008d; /* Change color as needed */
+  height: 5px;
+  width: 0;
+  transition: width 0.001s ease-in-out; /* Smoother transition */
+}
