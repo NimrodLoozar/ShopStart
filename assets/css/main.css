@@ -87,34 +87,32 @@ p {
   padding: 3rem;
 }
 
+#bubble {
+  position: relative;
+}
+
 #img1 {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 
 #img2 {
   position: absolute;
-  top: 3rem;
-  right: 3rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 #img3 {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 
 #img4 {
   position: absolute;
-  top: 3rem;
-  right: 3rem;
-}
-
-#img5 {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .pFoto-img {
@@ -823,25 +821,49 @@ html {
   scroll-margin-top: 4em;
 }
 
-.bubbleLeft {
+.meestRecentBubbleLeft {
   display: flex;
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
-  background-color: rgba(86, 147, 0, 0.5529411765);
+  background-color: #C29007;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
 }
 
-.bubbleRight {
+.meestRecentBubbleRight {
   display: flex;
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
-  background-color: rgba(86, 147, 0, 0.5529411765);
+  background-color: #C29007;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0 50px 50px;
+  scroll-margin-top: 4em;
+}
+
+.revieuwBubbleLeft {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 20px 40px;
+  background-color: #414A4C;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 50px 50px 50px;
+  scroll-margin-top: 4em;
+}
+
+.revieuwBubbleRight {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 20px 40px;
+  background-color: #414A4C;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 50px 0 50px 50px;
   scroll-margin-top: 4em;

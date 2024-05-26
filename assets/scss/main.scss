@@ -99,26 +99,52 @@ html{
 
 }
 
-.bubbleLeft {
+.meestRecentBubbleLeft {
   display: flex;
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
-  background-color: #5693008d;// was #bdbdbd
+  background-color: #C29007;// was #bdbdbd
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
 
 }
 
-.bubbleRight {
+.meestRecentBubbleRight {
   display: flex;
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
-  background-color: #5693008d;// was #bdbdbd
+  background-color: #C29007;// was #bdbdbd
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0 50px 50px;
+  scroll-margin-top: 4em;
+
+}
+
+.revieuwBubbleLeft {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 20px 40px;
+  background-color: #414A4C;// was #bdbdbd
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 50px 50px 50px;
+  scroll-margin-top: 4em;
+
+}
+
+.revieuwBubbleRight {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 20px 40px;
+  background-color: #414A4C;// was #bdbdbd
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 50px 0 50px 50px;
   scroll-margin-top: 4em;
