@@ -151,6 +151,20 @@ html{
 
 }
 
+.footerBubble {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 20px 40px;
+  background-color: #414A4C;// was #bdbdbd
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 50px 50px 50px;
+  scroll-margin-top: 4em;
+
+}
+
+
 // styling voor side menu
 .side_menu_open {
   margin-right: 1rem;
