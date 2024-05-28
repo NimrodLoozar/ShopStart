@@ -125,6 +125,11 @@ p {
 img {
   max-width: 100%;
   max-height: 100%;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .imgLeft {
@@ -146,70 +151,13 @@ section.orange-background {
   background-color: rgba(247, 166, 17, 0.5);
 }
 
-.card {
-  padding: 0 !important;
-}
-.card:not(.link-block) > *:not(img), .card.link-block a > *:not(img) {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.card img.round {
-  margin: 1rem;
-}
-
-.product .product-img {
-  padding: 0.5rem;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  background-color: #fff;
-  border-bottom: 1px solid #999;
-}
-.product h4 {
-  font-size: 1.5em;
-}
-
-.link-block a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  text-decoration: none;
-  color: #000;
-}
-
 a {
-  color: #00aeef;
+  color: #000;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 a:hover {
   color: #f7a611;
-}
-
-aside ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 1px solid #efefef;
-  border-radius: 0.5rem;
-}
-aside ul li {
-  padding: 0;
-  margin: 0;
-}
-aside ul li a {
-  display: inline-block;
-  width: 100%;
-  padding: 0.5rem;
-  text-decoration: none;
-  border-bottom: 1px solid #efefef;
-}
-
-.products-container {
-  padding: 1rem 0;
-}
-.products-container aside {
-  margin-top: 1rem;
-  padding: 0 1rem;
 }
 
 footer {
@@ -217,6 +165,11 @@ footer {
 }
 footer ul {
   list-style: none;
+  display: flex;
+  line-height: 30px;
+}
+footer ulli p {
+  margin: 0;
 }
 
 .text-left {
@@ -874,6 +827,7 @@ html {
 .footerBubble {
   display: flex;
   max-width: 1500px;
+  height: 250px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
@@ -941,18 +895,9 @@ html {
     font-size: 18px;
   }
 }
-img.round {
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.card {
-  background-color: #f8f8f8;
-  border: 1px solid rgba(170, 170, 170, 0.5333333333);
-  box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.0666666667);
-  border-radius: 0.5rem;
-  overflow: hidden;
+#social {
+  width: 50px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
