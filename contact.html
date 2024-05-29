@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row ai-center nav-container jc-space-between">
+                <div class="logo">
+                    <img id="logo" src="assets/img/shopstart-high-resolution-logo-white-transparent.png" alt="">
+                </div>
+                <div>
+                    <div id="mySidenav" class="sidenav row jc-space-between">
+                        <p>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About Us</a>
+                            <a href="service.html">Service</a>
+                            <a href="#">Contact</a>
+                        </p>
+                    </div>
+                    <span class="side_menu_open" style="font-size:40px;cursor:pointer"
+                        onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+            <div id="progress-bar"></div>
+        </nav>
+        <div id="banner">
+            <img src="assets/img/image.png" alt=""></img>
+            <div class="content text-center">
+                <h2>"Samen bouwen we aan jouw online succes"</h2>
+            </div>
+        </div>
+    </header>
+    <main class="container row">
+        <section id="bubble" class="bubbleTop jc-center row">
+            <div id="contact1" class="pFoto col-4 col-xxl-4 col-xl-5 col-l-6 col-m-12 col-s-12 col-xs-12">
+                <img id="img5" class="pFoto-img2 imgLeft"
+                    src="assets/img/happy-call-center-agent-wearing-headset-while-talking-with-clients-working-office.jpg"
+                    alt="">
+            </div>
+            <div class="col-8 col-xxl-8 col-xl-7 col-l-6 col-m-12 col-s-12 col-xs-12">
+                <h1>Klantenservice</h1>
+                <p><b>Email: </b><a href="mailto:info@AMO.nl">info@shopstart.com</a></p>
+                <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973160</a>
+            </div>
+            <div class="col-12">
+                <div class="row ai-center jc-space-between">
+                    <label for="email">
+                        <h5>Email:</h5>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Your mail:" required>
+                </div>
+                <div class="row ai-center jc-space-between">
+                    <label for="text">
+                        <h5>Content:</h5>
+                    </label>
+                    <input type="text" name="" id="text" placeholder="Type your question:">
+                </div>
+            </div>
+            <button class="col-12" type="submit"><b>submit</b></button>
+
+        </section>
+        <div class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleLeft">
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img1 contact1" class="pFoto-img imgLeft"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">order@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973161</a>
+                </div>
+            </section>
+        </div>
+        <section class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleRight">
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">services@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973162</a>
+                </div>
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img2 content1" class="pFoto-img imgRight"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+            </section>
+        </section>
+        <section class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleLeft">
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img1 contact1" class="pFoto-img imgLeft"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">donation@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973163</a>
+                </div>
+            </section>
+        </section>
+        <section class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleRight">
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">services@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973164</a>
+                </div>
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img2 content1" class="pFoto-img imgRight"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+            </section>
+        </section>
+        <section class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleLeft">
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img1 contact1" class="pFoto-img imgLeft"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">...???@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973165</a>
+                </div>
+            </section>
+        </section>
+        <section class="col-12 col-xl-6 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <section id="bubble" class="row bubbleRight">
+                <div class="col-12 col-xl-9 col-l-9 col-m-9 ai-center">
+                    <p><b>Email: </b><a href="mailto:info@AMO.nl">...???@shopstart.com</a></p>
+                    <p><b>Tel.nr.: </b><a href="tel:+31 6 64973160">+31 6 64973166</a>
+                </div>
+                <div class="pFoto col-12 col-xl-3 col-l-3 col-m-3">
+                    <img id="img2 content1" class="pFoto-img imgRight"
+                        src="assets/img/office-desktop-with-laptop-business-man.jpg" alt="">
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="container row ai-center">
+            <div class="col col-4 col-xl-4 col-l-12 col-m-12 col-s-12 col-xs-12">
+                <div class="footerBubble jc-center">
+                    <ul class="col ai-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Servive</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-4 col-xl-4 col-l-12 col-m-12 col-s-12 col-xs-12">
+                <div class="row jc-space-evenly">
+                    <img id="social" src="assets/img/5296499_fb_facebook_facebook logo_icon.svg" alt="">
+                    <img id="social" src="assets/img/1298778_youtube_play_video_icon.svg" alt="">
+                    <img id="social" src="assets/img/5296765_camera_instagram_instagram logo_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="col col-4 col-xl-4 col-l-12 col-m-12 col-s-12 col-xs-12">
+                <div class="footerBubble">
+                    <ul class="col ai-center">
+                        <li><a href="#">Meest recent</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li>
+                            <p>Email: <a href="mailto:info@AMO.nl">info@AMO.nl</a></p>
+                        </li>
+                        <li>
+                            <p>Tel.: <a href="tel:06 65983241">06 65983241</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="assets/js/aside.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+</body>
+
+</html>

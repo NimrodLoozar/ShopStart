@@ -79,14 +79,23 @@ html{
   &:hover{
     font-weight: bold;
     scale: 1.1;
-    background-color: #95ff008d;
+    background-color: #ff8c00;
     border-width: 5px;
   }
 }
 
 
 // styling voor bubble
-.bubbleTop {
+.bubbleTop,
+.bubbleTop2,
+.bubbleLeft,
+.bubbleRight,
+.meestRecentBubbleLeft,
+.meestRecentBubbleRight,
+.revieuwBubbleLeft,
+.revieuwBubbleRight,
+.footerBubble,
+.footerBubble2 {
   display: flex;
   max-width: 1500px;
   width: 100%;
@@ -97,61 +106,43 @@ html{
   border-radius: 0 0 50px 50px;
   scroll-margin-top: 4em;
 
-}
+  &.bubbleTop2{
+    background-color: #414A4C;
+  }
 
-.meestRecentBubbleLeft {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #C29007;// was #bdbdbd
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 50px 50px 50px;
-  scroll-margin-top: 4em;
+  &.meestRecentBubbleLeft{
+    background-color: #C29007;
+    border-radius: 0 50px 50px 50px;
+  }
 
-}
+  &.meestRecentBubbleRight{
+    background-color: #C29007;
+    border-radius: 50px 0 50px 50px;
+  }
 
-.meestRecentBubbleRight {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #C29007;// was #bdbdbd
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 50px 50px;
-  scroll-margin-top: 4em;
+  &.revieuwBubbleLeft{
+    background-color: #414A4C;
+    border-radius: 0 50px 50px 50px;
+  }
 
-}
+  &.revieuwBubbleRight{
+    background-color: #414A4C;
+    border-radius: 50px 0 50px 50px;
+  }
 
-.revieuwBubbleLeft {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #414A4C;// was #bdbdbd
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 50px 50px 50px;
-  scroll-margin-top: 4em;
+  &.bubbleLeft{
+    background-color: #414A4C;
+    border-radius: 0 50px 50px 50px;
+  }
+  &.bubbleRight{
+    background-color: #414A4C;
+    border-radius: 50px 0 50px 50px;
+  }
 
 }
 
-.revieuwBubbleRight {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #414A4C;// was #bdbdbd
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 50px 50px;
-  scroll-margin-top: 4em;
-
-}
-
-.footerBubble {
+.footerBubble,
+.footerBubble2 {
   display: flex;
   max-width: 1500px;
   height: 250px;
@@ -162,6 +153,10 @@ html{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
+
+  &.footerBubble2{
+    border-radius: 50px 0 50px 50px;
+  }
 }
 
 
@@ -176,7 +171,7 @@ html{
   width: 0;
   position: fixed;
   z-index: 1;
-  margin-top: 2.75rem;
+  margin-top: 3.95rem;
   top: 0;
   // left: 0;
    right: 0;
@@ -200,12 +195,12 @@ html{
 
 .sidenav a:hover {
   transition: 0.5s;
-  color: #95ff008d;
+  color: #ff8c00;
 }
 
 .side_menu_open:hover {
   transition: 0.5s;
-  color: #95ff008d;
+  color: #ff8c00;
 }
 
 .sidenav .closebtn {
@@ -232,3 +227,10 @@ html{
   cursor: pointer;
 }
 
+#overShopStart > p{
+margin-bottom: 2rem;
+}
+
+#contact1{
+  margin-bottom: 11rem;
+}

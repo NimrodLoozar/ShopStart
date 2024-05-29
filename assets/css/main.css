@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap");
 html,
 body {
   width: 100%;
   min-height: 100%;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.15rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -34,6 +35,19 @@ body {
 }
 body * {
   box-sizing: border-box;
+}
+
+h1, h2 h3,
+h4,
+h5,
+h6 {
+  word-wrap: break-word;
+  -webkit-hyphens: auto; /* Chrome, Safari */
+  -moz-hyphens: auto; /* Firefox */
+  -ms-hyphens: auto; /* Internet Explorer */
+  hyphens: auto;
+  overflow-wrap: break-word; /* Alternatív tulajdonság a szavak tördeléséhez */
+  white-space: normal; /* Normál szöveg tördelés */
 }
 
 h1 {
@@ -80,6 +94,13 @@ h6 {
 
 p {
   margin: 0.5em 0;
+  word-wrap: break-word;
+  -webkit-hyphens: auto; /* Chrome, Safari */
+  -moz-hyphens: auto; /* Firefox */
+  -ms-hyphens: auto; /* Internet Explorer */
+  hyphens: auto;
+  overflow-wrap: break-word; /* Alternatív tulajdonság a szavak tördeléséhez */
+  white-space: normal; /* Normál szöveg tördelés */
 }
 
 .pFoto {
@@ -115,11 +136,27 @@ p {
   right: 1.5rem;
 }
 
-.pFoto-img {
+#img5 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.pFoto-img,
+.pFoto-img2 {
   width: 100px;
   height: 100px;
   object-fit: cover;
   object-position: right;
+}
+.pFoto-img.pFoto-img2,
+.pFoto-img2.pFoto-img2 {
+  min-width: 150px;
+  max-width: 350px;
+  width: 100%;
+  min-height: 50px;
+  max-height: 250px;
+  height: 100%;
 }
 
 img {
@@ -157,7 +194,7 @@ a {
   transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: #f7a611;
+  color: #ff8c00;
 }
 
 footer {
@@ -170,6 +207,27 @@ footer ul {
 }
 footer ulli p {
   margin: 0;
+}
+
+input,
+textarea {
+  width: 1000px;
+  height: 40px;
+  min-width: 50px;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+button[type=submit] {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-left {
@@ -215,7 +273,7 @@ nav .main-menu ul > li > a {
   text-decoration: none;
 }
 nav .main-menu ul > li > a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ff8c00;
 }
 
 #progress-bar {
@@ -259,8 +317,14 @@ nav .main-menu ul > li > a:hover {
 
 .container {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
+}
+@media screen and (min-width: 340px) {
+  .container {
+    width: 240px;
+  }
 }
 @media screen and (min-width: 576px) {
   .container {
@@ -379,6 +443,44 @@ nav .main-menu ul > li > a:hover {
   width: 100%;
 }
 
+@media screen and (min-width: 340px) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 576px) {
   .col-s-1 {
     width: 8.3333333333%;
@@ -760,11 +862,20 @@ html {
 #myBtn8:hover {
   font-weight: bold;
   scale: 1.1;
-  background-color: rgba(149, 255, 0, 0.5529411765);
+  background-color: #ff8c00;
   border-width: 5px;
 }
 
-.bubbleTop {
+.bubbleTop,
+.bubbleTop2,
+.bubbleLeft,
+.bubbleRight,
+.meestRecentBubbleLeft,
+.meestRecentBubbleRight,
+.revieuwBubbleLeft,
+.revieuwBubbleRight,
+.footerBubble,
+.footerBubble2 {
   display: flex;
   max-width: 1500px;
   width: 100%;
@@ -775,56 +886,99 @@ html {
   border-radius: 0 0 50px 50px;
   scroll-margin-top: 4em;
 }
-
-.meestRecentBubbleLeft {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #C29007;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 50px 50px 50px;
-  scroll-margin-top: 4em;
-}
-
-.meestRecentBubbleRight {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #C29007;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 50px 50px;
-  scroll-margin-top: 4em;
-}
-
-.revieuwBubbleLeft {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
+.bubbleTop.bubbleTop2,
+.bubbleTop2.bubbleTop2,
+.bubbleLeft.bubbleTop2,
+.bubbleRight.bubbleTop2,
+.meestRecentBubbleLeft.bubbleTop2,
+.meestRecentBubbleRight.bubbleTop2,
+.revieuwBubbleLeft.bubbleTop2,
+.revieuwBubbleRight.bubbleTop2,
+.footerBubble.bubbleTop2,
+.footerBubble2.bubbleTop2 {
   background-color: #414A4C;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bubbleTop.meestRecentBubbleLeft,
+.bubbleTop2.meestRecentBubbleLeft,
+.bubbleLeft.meestRecentBubbleLeft,
+.bubbleRight.meestRecentBubbleLeft,
+.meestRecentBubbleLeft.meestRecentBubbleLeft,
+.meestRecentBubbleRight.meestRecentBubbleLeft,
+.revieuwBubbleLeft.meestRecentBubbleLeft,
+.revieuwBubbleRight.meestRecentBubbleLeft,
+.footerBubble.meestRecentBubbleLeft,
+.footerBubble2.meestRecentBubbleLeft {
+  background-color: #C29007;
   border-radius: 0 50px 50px 50px;
-  scroll-margin-top: 4em;
 }
-
-.revieuwBubbleRight {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto 1rem;
-  padding: 20px 40px;
-  background-color: #414A4C;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.bubbleTop.meestRecentBubbleRight,
+.bubbleTop2.meestRecentBubbleRight,
+.bubbleLeft.meestRecentBubbleRight,
+.bubbleRight.meestRecentBubbleRight,
+.meestRecentBubbleLeft.meestRecentBubbleRight,
+.meestRecentBubbleRight.meestRecentBubbleRight,
+.revieuwBubbleLeft.meestRecentBubbleRight,
+.revieuwBubbleRight.meestRecentBubbleRight,
+.footerBubble.meestRecentBubbleRight,
+.footerBubble2.meestRecentBubbleRight {
+  background-color: #C29007;
   border-radius: 50px 0 50px 50px;
-  scroll-margin-top: 4em;
+}
+.bubbleTop.revieuwBubbleLeft,
+.bubbleTop2.revieuwBubbleLeft,
+.bubbleLeft.revieuwBubbleLeft,
+.bubbleRight.revieuwBubbleLeft,
+.meestRecentBubbleLeft.revieuwBubbleLeft,
+.meestRecentBubbleRight.revieuwBubbleLeft,
+.revieuwBubbleLeft.revieuwBubbleLeft,
+.revieuwBubbleRight.revieuwBubbleLeft,
+.footerBubble.revieuwBubbleLeft,
+.footerBubble2.revieuwBubbleLeft {
+  background-color: #414A4C;
+  border-radius: 0 50px 50px 50px;
+}
+.bubbleTop.revieuwBubbleRight,
+.bubbleTop2.revieuwBubbleRight,
+.bubbleLeft.revieuwBubbleRight,
+.bubbleRight.revieuwBubbleRight,
+.meestRecentBubbleLeft.revieuwBubbleRight,
+.meestRecentBubbleRight.revieuwBubbleRight,
+.revieuwBubbleLeft.revieuwBubbleRight,
+.revieuwBubbleRight.revieuwBubbleRight,
+.footerBubble.revieuwBubbleRight,
+.footerBubble2.revieuwBubbleRight {
+  background-color: #414A4C;
+  border-radius: 50px 0 50px 50px;
+}
+.bubbleTop.bubbleLeft,
+.bubbleTop2.bubbleLeft,
+.bubbleLeft.bubbleLeft,
+.bubbleRight.bubbleLeft,
+.meestRecentBubbleLeft.bubbleLeft,
+.meestRecentBubbleRight.bubbleLeft,
+.revieuwBubbleLeft.bubbleLeft,
+.revieuwBubbleRight.bubbleLeft,
+.footerBubble.bubbleLeft,
+.footerBubble2.bubbleLeft {
+  background-color: #414A4C;
+  border-radius: 0 50px 50px 50px;
+}
+.bubbleTop.bubbleRight,
+.bubbleTop2.bubbleRight,
+.bubbleLeft.bubbleRight,
+.bubbleRight.bubbleRight,
+.meestRecentBubbleLeft.bubbleRight,
+.meestRecentBubbleRight.bubbleRight,
+.revieuwBubbleLeft.bubbleRight,
+.revieuwBubbleRight.bubbleRight,
+.footerBubble.bubbleRight,
+.footerBubble2.bubbleRight {
+  background-color: #414A4C;
+  border-radius: 50px 0 50px 50px;
 }
 
-.footerBubble {
+.footerBubble,
+.footerBubble2 {
   display: flex;
   max-width: 1500px;
   height: 250px;
@@ -835,6 +989,10 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
+}
+.footerBubble.footerBubble2,
+.footerBubble2.footerBubble2 {
+  border-radius: 50px 0 50px 50px;
 }
 
 .side_menu_open {
@@ -847,7 +1005,7 @@ html {
   width: 0;
   position: fixed;
   z-index: 1;
-  margin-top: 2.75rem;
+  margin-top: 3.95rem;
   top: 0;
   right: 0;
   background-color: #111;
@@ -871,12 +1029,12 @@ html {
 
 .sidenav a:hover {
   transition: 0.5s;
-  color: rgba(149, 255, 0, 0.5529411765);
+  color: #ff8c00;
 }
 
 .side_menu_open:hover {
   transition: 0.5s;
-  color: rgba(149, 255, 0, 0.5529411765);
+  color: #ff8c00;
 }
 
 .sidenav .closebtn {
@@ -898,6 +1056,14 @@ html {
 #social {
   width: 50px;
   cursor: pointer;
+}
+
+#overShopStart > p {
+  margin-bottom: 2rem;
+}
+
+#contact1 {
+  margin-bottom: 11rem;
 }
 
 /*# sourceMappingURL=main.css.map */
