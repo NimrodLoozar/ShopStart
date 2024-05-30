@@ -220,7 +220,8 @@ textarea{
   padding: 1rem;
 }
 
-button[type="submit"]{
+button[type="submit"],
+#about{
   max-width: 200px;
   width: 100%;
   border-radius: 0 0 20px 20px;
