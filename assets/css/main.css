@@ -112,36 +112,6 @@ p {
   position: relative;
 }
 
-#img1 {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-}
-
-#img2 {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-}
-
-#img3 {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-}
-
-#img4 {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-}
-
-#img5 {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-}
-
 .pFoto-img,
 .pFoto-img2 {
   width: 100px;
@@ -322,11 +292,6 @@ nav .main-menu ul > li > a:hover {
   margin: 0 auto;
   display: flex;
 }
-@media screen and (min-width: 340px) {
-  .container {
-    width: 240px;
-  }
-}
 @media screen and (min-width: 576px) {
   .container {
     width: 476px;
@@ -444,44 +409,6 @@ nav .main-menu ul > li > a:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 340px) {
-  .col-xs-1 {
-    width: 8.3333333333%;
-  }
-  .col-xs-2 {
-    width: 16.6666666667%;
-  }
-  .col-xs-3 {
-    width: 25%;
-  }
-  .col-xs-4 {
-    width: 33.3333333333%;
-  }
-  .col-xs-5 {
-    width: 41.6666666667%;
-  }
-  .col-xs-6 {
-    width: 50%;
-  }
-  .col-xs-7 {
-    width: 58.3333333333%;
-  }
-  .col-xs-8 {
-    width: 66.6666666667%;
-  }
-  .col-xs-9 {
-    width: 75%;
-  }
-  .col-xs-10 {
-    width: 83.3333333333%;
-  }
-  .col-xs-11 {
-    width: 91.6666666667%;
-  }
-  .col-xs-12 {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 576px) {
   .col-s-1 {
     width: 8.3333333333%;
@@ -938,6 +865,7 @@ html {
 .footerBubble2.revieuwBubbleLeft {
   background-color: #414A4C;
   border-radius: 0 50px 50px 50px;
+  color: #fff;
 }
 .bubbleTop.revieuwBubbleRight,
 .bubbleTop2.revieuwBubbleRight,
@@ -951,6 +879,7 @@ html {
 .footerBubble2.revieuwBubbleRight {
   background-color: #414A4C;
   border-radius: 50px 0 50px 50px;
+  color: #fff;
 }
 .bubbleTop.bubbleLeft,
 .bubbleTop2.bubbleLeft,
@@ -964,6 +893,31 @@ html {
 .footerBubble2.bubbleLeft {
   background-color: #414A4C;
   border-radius: 0 50px 50px 50px;
+  color: #fff;
+}
+.bubbleTop.bubbleLeft a,
+.bubbleTop2.bubbleLeft a,
+.bubbleLeft.bubbleLeft a,
+.bubbleRight.bubbleLeft a,
+.meestRecentBubbleLeft.bubbleLeft a,
+.meestRecentBubbleRight.bubbleLeft a,
+.revieuwBubbleLeft.bubbleLeft a,
+.revieuwBubbleRight.bubbleLeft a,
+.footerBubble.bubbleLeft a,
+.footerBubble2.bubbleLeft a {
+  color: #fff;
+}
+.bubbleTop.bubbleLeft a:hover,
+.bubbleTop2.bubbleLeft a:hover,
+.bubbleLeft.bubbleLeft a:hover,
+.bubbleRight.bubbleLeft a:hover,
+.meestRecentBubbleLeft.bubbleLeft a:hover,
+.meestRecentBubbleRight.bubbleLeft a:hover,
+.revieuwBubbleLeft.bubbleLeft a:hover,
+.revieuwBubbleRight.bubbleLeft a:hover,
+.footerBubble.bubbleLeft a:hover,
+.footerBubble2.bubbleLeft a:hover {
+  color: #ff8c00;
 }
 .bubbleTop.bubbleRight,
 .bubbleTop2.bubbleRight,
@@ -977,13 +931,37 @@ html {
 .footerBubble2.bubbleRight {
   background-color: #414A4C;
   border-radius: 50px 0 50px 50px;
+  color: #fff;
+}
+.bubbleTop.bubbleRight a,
+.bubbleTop2.bubbleRight a,
+.bubbleLeft.bubbleRight a,
+.bubbleRight.bubbleRight a,
+.meestRecentBubbleLeft.bubbleRight a,
+.meestRecentBubbleRight.bubbleRight a,
+.revieuwBubbleLeft.bubbleRight a,
+.revieuwBubbleRight.bubbleRight a,
+.footerBubble.bubbleRight a,
+.footerBubble2.bubbleRight a {
+  color: #fff;
+}
+.bubbleTop.bubbleRight a:hover,
+.bubbleTop2.bubbleRight a:hover,
+.bubbleLeft.bubbleRight a:hover,
+.bubbleRight.bubbleRight a:hover,
+.meestRecentBubbleLeft.bubbleRight a:hover,
+.meestRecentBubbleRight.bubbleRight a:hover,
+.revieuwBubbleLeft.bubbleRight a:hover,
+.revieuwBubbleRight.bubbleRight a:hover,
+.footerBubble.bubbleRight a:hover,
+.footerBubble2.bubbleRight a:hover {
+  color: #ff8c00;
 }
 
 .footerBubble,
 .footerBubble2 {
   display: flex;
   max-width: 1500px;
-  height: 250px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
@@ -991,10 +969,27 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
+  color: #fff;
+}
+.footerBubble a,
+.footerBubble2 a {
+  color: #fff;
+}
+.footerBubble a:hover,
+.footerBubble2 a:hover {
+  color: #ff8c00;
 }
 .footerBubble.footerBubble2,
 .footerBubble2.footerBubble2 {
   border-radius: 50px 0 50px 50px;
+}
+
+.configuraties {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding-top: 2rem;
 }
 
 .side_menu_open {
@@ -1064,8 +1059,20 @@ html {
   margin-bottom: 2rem;
 }
 
+#overShopStart {
+  color: #fff;
+}
+
 #contact1 {
-  margin-bottom: 11rem;
+  margin-bottom: 1rem;
+}
+
+#configuraties {
+  width: 100px;
+}
+
+#service {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

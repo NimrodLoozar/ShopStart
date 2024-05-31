@@ -124,20 +124,38 @@ html{
   &.revieuwBubbleLeft{
     background-color: #414A4C;
     border-radius: 0 50px 50px 50px;
+    color: #fff;
   }
 
   &.revieuwBubbleRight{
     background-color: #414A4C;
     border-radius: 50px 0 50px 50px;
+    color: #fff;
   }
 
   &.bubbleLeft{
     background-color: #414A4C;
     border-radius: 0 50px 50px 50px;
+    color: #fff;
+    a{
+    color: #fff;
+
+    &:hover {
+    color: #ff8c00;
+  }
+  }
   }
   &.bubbleRight{
     background-color: #414A4C;
     border-radius: 50px 0 50px 50px;
+    color: #fff;
+    a{
+    color: #fff;
+
+    &:hover {
+    color: #ff8c00;
+  }
+  }
   }
 
 }
@@ -146,7 +164,6 @@ html{
 .footerBubble2 {
   display: flex;
   max-width: 1500px;
-  height: 250px;
   width: 100%;
   margin: 0 auto 1rem;
   padding: 20px 40px;
@@ -154,10 +171,27 @@ html{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0 50px 50px 50px;
   scroll-margin-top: 4em;
+  color: #fff;
+
+  a{
+    color: #fff;
+
+    &:hover {
+    color: #ff8c00;
+  }
+  }
 
   &.footerBubble2{
     border-radius: 50px 0 50px 50px;
   }
+}
+
+.configuraties{
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding-top: 2rem;
 }
 
 
@@ -232,6 +266,18 @@ html{
 margin-bottom: 2rem;
 }
 
+#overShopStart{
+  color: #fff;
+}
+
 #contact1{
-  margin-bottom: 11rem;
+  margin-bottom: 1rem;
+}
+
+#configuraties{
+  width: 100px;
+}
+
+#service{
+  color: #fff;
 }
